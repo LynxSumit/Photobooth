@@ -16,12 +16,12 @@ const CustomWebcam = ({imgSrc , setImgSrc}) => {
         setImgSrc(img);
       }, [setImgSrc]);
 
-      useEffect(() => {
+      // useEffect(() => {
         
-      if(!imgSrc){
-       navigate("/")
-      }
-      }, [imgSrc, navigate]);
+      // if(!imgSrc){
+      //  navigate("/")
+      // }
+      // }, [imgSrc, navigate]);
   return (
     <Container className="container">
     {imgSrc ? (
