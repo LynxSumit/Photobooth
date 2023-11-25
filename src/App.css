@@ -1,5 +1,6 @@
 #root {
-  max-width: 1280px;
+  /* max-width: 1280px; */
+
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -49,8 +50,40 @@ background: violet;
 }
 
 .home{
+  height: 100vh;
   display: flex;
   flex-direction: column;
   gap: 2vmax;
+  /* align-items: center; */
+  justify-content: center;
   
+}
+.preview, .container{
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2vmax;
+  align-items: center;
+  justify-content: center;
+}
+.select-frame{
+  height: 100vh;
+width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2vmax;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.img-list{
+width: 100%;
+
+}
+
+.canvas{
+  height: 100vh;
+  width: 100vw;
 }

@@ -23,8 +23,8 @@ const SelectFrame = ({selectedFrame, setSelectedFrame}) => {
         <Button key={item.img} onClick={()=> {setSelectedFrame(item.img); navigate("/image-merge") /* localStorage.setItem("frame", selectedFrame) --TODO */ }} >
 
           <img
-           
-          style={{margin : "auto", height: 400, width : 400 }} 
+           width={300} height={400 }
+          style={{margin : "auto" }} 
             // srcSet={`${item.img}?w=161&fit=crop&auto=format&dpr=2 2x`}
             src={`${item.img}`}
             

@@ -16,18 +16,22 @@ const CustomWebcam = ({imgSrc , setImgSrc}) => {
         setImgSrc(img);
       }, [setImgSrc]);
 
-      // useEffect(() => {
+      useEffect(() => {
         
-      // if(!imgSrc){
-      //  navigate("/")
-      // }
-      // }, [imgSrc, navigate]);
+        // webcamRef.set({
+        //   width: 320,
+        //   height: 480,
+        //   align:'center',
+        //   image_format: 'jpeg',
+        //   jpeg_quality: 100
+        // });
+      }, [imgSrc, navigate]);
   return (
     <Container className="container">
     {imgSrc ? (
       <img src={imgSrc} alt="webcam" />
     ) : (
-      <Webcam height={600} width={600} ref={webcamRef} />
+      <Webcam width={320} height={480 } imageSmoothing  ref={webcamRef} />
     )}
     <Stack sx={{display : "flex", width : "40vw", margin : "auto", gap : "2vmax", marginTop : ".8vmax" }} className="btn-container" >
         {imgSrc ? (

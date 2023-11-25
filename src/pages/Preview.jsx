@@ -13,10 +13,12 @@ useEffect(() => {
     }
     }, [imgSrc, navigate]);
   return (
-    <div>
+    <div className='preview'>
     <Typography variant="body1" color="initial">Preview OF Image</Typography>
-      <img src={imgSrc} alt="" height={600}  />
-<Stack sx={{display : "flex", width : "40vw", margin : "auto", gap : "2vmax", marginTop : ".8vmax" }}>
+    <Stack sx={{height : "100%", gap: "2vmax"}}>
+      <img src={imgSrc} alt="" />
+
+<Stack sx={{display : "flex", gap: "2vmax"}}>
       <Button variant='contained' type='button' onClick={() => {navigate("/") ; setImgSrc(null)}}  >
       Change Photo
       </Button>
@@ -25,6 +27,7 @@ Continue
       </Button>
 
 </Stack>
+    </Stack>
     </div>
   )
 }

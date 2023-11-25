@@ -46,7 +46,7 @@ const ImageMerger = ({ imgSrc, frame }) => {
       });
     }
 
-    // Check if the mouse is within the bounds of the image2
+    
     if (
       mouseX >= image2Pos.x &&
       mouseX <= image2Pos.x + image2.width &&
@@ -62,11 +62,14 @@ const ImageMerger = ({ imgSrc, frame }) => {
 
   return (
     <>
+    <div className='canvas'>
       <canvas
         ref={canvasRef}
         onDoubleClick={handleImageDoubleClick}
         style={{ border: '1px solid #000' }}
       />
+
+    </div>
       
     </>
   );
