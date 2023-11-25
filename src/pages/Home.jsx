@@ -24,6 +24,7 @@ const Home = ({imgSrc, setImgSrc}) => {
     const  onFileUpload = (e) => {
       e.preventDefault()
 setImgSrc(URL.createObjectURL(imgSrc))
+// JSON.parse(localStorage.setItem('imgSrc', imgSrc)) -- TODO
 console.log(imgSrc)
 navigate("/preview")
     }

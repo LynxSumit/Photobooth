@@ -12,7 +12,9 @@ function App() {
   const [selectedFrame, setSelectedFrame] = useState(null);
   
   useEffect(() => {
-    
+  // if(  localStorage.getItem("imgSrc")){
+  //   setImgSrc(JSON.stringify(localStorage.getItem("imgSrc")));
+  // }  -- TODO
   
   if(!imgSrc){
     <Navigate to={"/"}/>

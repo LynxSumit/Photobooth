@@ -20,7 +20,7 @@ const SelectFrame = ({selectedFrame, setSelectedFrame}) => {
 
 <Stack sx={{display :"flex",justifyContent : "center", flexDirection : {md:"row", sm : "column" },flexWrap : "wrap", margin : "1vmax auto" , width: "auto", height: "auto", padding :"1vmax", border : "1px solid black" }} variant="woven" >
       {itemData.map((item) => (
-        <Button key={item.img} onClick={()=> {setSelectedFrame(item.img); navigate("/image-merge")}}>
+        <Button key={item.img} onClick={()=> {setSelectedFrame(item.img); navigate("/image-merge") /* localStorage.setItem("frame", selectedFrame) --TODO */ }} >
 
           <img
            
